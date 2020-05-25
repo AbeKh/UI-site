@@ -9,7 +9,7 @@ layout: default
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Sections -->
-	{%- for _section in _post -%}
+	{%- for _section in _posts -%}
 		{%- include section.html title=_posts.title photo=_posts.cover-photo photo-alt=_posts.cover-photo-alt auto-header=_posts.auto-header content=_posts.content -%}
 	{%- endfor -%}
 </div>
