@@ -134,7 +134,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: #bfbfbf;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -296,7 +296,7 @@
 		&.icons {
 			cursor: default;
 
-			li {
+			{
 				display: inline-block;
 			}
 
@@ -600,7 +600,7 @@
 						color: #fff;
 
 						span::before {
-							color: #e27689;
+							color: #bfbfbf;
 						}
 					}
 				}
@@ -622,7 +622,7 @@
 			cursor: default;
 			margin: 0;
 
-			li {
+			{
 				display: inline-block;
 				line-height: 1em;
 				border-left: solid 1px rgba(128, 128, 128, 0.35);
@@ -792,7 +792,7 @@
 
 			ul {
 				&.icons {
-					li {
+					{
 						a {
 							width: 1.75em;
 						}
@@ -822,7 +822,7 @@
 			#nav {
 				ul {
 					list-style: none;
-					li {
+					{
 						a {
 							font-size: 0.8em;
 							padding-top: 0.5em;
