@@ -3,7 +3,7 @@
 # project's root directory. Please note that the following lines are
 # NECESSARY for Prologue to work correctly:
 #
-# 
+#
 # collections: [sections]
 #
 # They activate the theme and tell Jekyll to find your homepage content
@@ -60,5 +60,5 @@ dribbble_url:
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-remote_theme: chrisbobbe/jekyll-theme-prologue
+remote_theme: https://github.com/chrisbobbe/jekyll-theme-prologue
 collections: [sections]
