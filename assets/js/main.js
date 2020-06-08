@@ -3,26 +3,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-	//Check if user haven't seen loading screen
-	if (localStorage.getItem('loading-screen') != null) {
-		$(window).on('load', function() { // makes sure the whole site is loaded 
-			$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
-			$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-			$('body').delay(250).css({'overflow':'visible'});
-			})
  
-		//Set info to localStorage that it has been seen
-		localStorage.setItem('loading-screen', 'seen');
-	}
- 
- 
-
-//$(window).on('load', function() { // makes sure the whole site is loaded 
-//	$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
-//	$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-//	$('body').delay(250).css({'overflow':'visible'});
-  //})
+$(window).on('load', function() { // makes sure the whole site is loaded 
+	$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
+	$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+	$('body').delay(250).css({'overflow':'visible'});
+  })
 
 (function($) {
 
