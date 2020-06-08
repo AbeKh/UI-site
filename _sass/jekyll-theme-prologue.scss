@@ -4,14 +4,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/* adding a preloader function
-*/
 
-$(window).on('load', function() { // makes sure the whole site is loaded 
-	$('#status').fadeOut(); // will first fade out the loading animation 
-	$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-	$('body').delay(350).css({'overflow':'visible'});
-  })
 
 /*
 	Prologue by HTML5 UP
