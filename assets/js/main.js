@@ -7,7 +7,7 @@
 $(window).on('load', function() { // makes sure the whole site is loaded 
 
 	//Check if user haven't seen loading screen
-	if (localStorage.getItem('load') != null) {
+	if (localStorage.getItem('loading-screen') != null) {
  
 		//show loading
 		$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
