@@ -3,36 +3,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-
-<style>
-#preloader 
-  {
-    display:none;
-  }
-</style>
-
-$(window).on('load', function () 
-        { // makes sure the whole site is loaded 
-            if (typeof(Storage) !== "undefined") {
-                // Code for localStorage/sessionStorage.                
-                if(localStorage.isFirstLoadComplete==="false"){
-                    $('#preloader').show(0);
-                    $('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
-                    $('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-                    $('body').delay(250).css({'overflow':'visible'});
-                    localStorage.setItem("isFirstLoadComplete", "true");
-                }
-            } else {
-                // Sorry! No Web Storage support..
-            }
-        });
-
-	//$(window).on('load', function() { // makes sure the whole site is loaded 
-	//$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
-	//$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-	//$('body').delay(250).css({'overflow':'visible'});
-  //})
+ 
+$(window).on('load', function() { // makes sure the whole site is loaded 
+	$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
+	$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+	$('body').delay(250).css({'overflow':'visible'});
+  })
 
 (function($) {
 
