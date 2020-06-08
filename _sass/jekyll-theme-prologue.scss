@@ -244,8 +244,8 @@
   }
   
   #status {
-	width: 200px;
-	height: 200px;
+	//width: 400px;
+	//height: 200px;
 	position: absolute;
 	left: 50%;
 	/* centers the loading animation horizontally one the screen */
@@ -255,7 +255,7 @@
 	/* path to your loading animation */
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: 0px 0 0 0px;
+	//margin: 0px 0 0 0px;
 	/* is width and height divided by two */
   }
 
