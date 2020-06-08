@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$(window).load(function() {
+$(window).on('load', function() { // makes sure the whole site is loaded 
 
 	//Check if user haven't seen loading screen
 	if (localStorage.getItem('load') != null) {
