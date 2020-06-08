@@ -4,11 +4,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
  
-$(window).on('load', function() { // makes sure the whole site is loaded 
-	$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
-	$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-	$('body').delay(250).css({'overflow':'visible'});
-  })
+if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
+	sessionStorage.setItem( 'doNotShow', true );
+	
+		$(window).on('load', function() { // makes sure the whole site is loaded 
+		$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
+		$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+		$('body').delay(250).css({'overflow':'visible'});
+		})
+		else {
+			$ ('#status, #preloader').hide();
+		}
+}
 
 (function($) {
 
