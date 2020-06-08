@@ -244,12 +244,14 @@
   }
   
   #status {
-	width: 200px;
-	height: 100px;
+	width: 400px;
+	height: 200px;
 	position: absolute;
 	left: 50%;
+	right: 50%;
 	/* centers the loading animation horizontally one the screen */
 	top: 50%;
+	bottom: 50%;
 	/* centers the loading animation vertically one the screen */
 	background-image: url(https://qmjobsblog.files.wordpress.com/2018/10/monkey-typing.gif);
 	/* path to your loading animation */
