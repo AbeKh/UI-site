@@ -19,7 +19,7 @@
 
 
 		if (sessionStorage.getItem('loader') !== 'true') {
-			$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
+			$('#status').delay(5000).fadeOut(); // will first fade out the loading animation 
 			$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
 		}
 		else {
@@ -29,7 +29,7 @@
 
 
 		$(window).on('load', function() { // makes sure the whole site is loaded 
-			$('#status').delay(4000).fadeOut(); // will first fade out the loading animation 
+			$('#status').delay(5000).fadeOut(); // will first fade out the loading animation 
 			$('#preloader').delay(1500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
 			$('body').delay(250).css({'overflow':'visible'});
 			sessionStorage.setItem('loader' , 'true');
