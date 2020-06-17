@@ -1171,8 +1171,7 @@
   
   /* [2] Transition property for smooth transformation of images */
   .img-hover-zoom img {
-	transition: transform .3s, filter .5s ease-in-out;
-	filter: grayscale(100%);
+	transition: transform .3s, filter .5s ease-in-out, filter grayscale(100%);
   }
   
   /* [3] Finally, transforming the image when container gets hovered */
