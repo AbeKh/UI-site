@@ -269,11 +269,11 @@
 		> .container,
 		&:last-child,
 		> .container > :last-child {
-			margin-bottom: 3em;
+			margin-bottom: 0;
 		}
 
 		.row > & {
-			margin-bottom: 3em;
+			margin-bottom: 0;
 		}
 
 		.row {
