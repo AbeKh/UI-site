@@ -1,0 +1,5 @@
+<form method="post" action="https://formspree.io/xqkyjarw">
+    <div class="row">
+      <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+    </div>
+  </form>  
