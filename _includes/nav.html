@@ -6,12 +6,13 @@
 <!-- Nav -->
 <nav id="nav">
   <ul>
-    {% unless page.exclude %}
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
       {%- for _page in _pages -%}
-        {%- assign _title = _page.title | default: _page.layout -%}
+        {% unless page.exclude %}
+          {%- assign _title = _page.title | default: _page.layout -%}
+        {%- endunless -%}
         {%- assign _slug = _title | slugify -%}
         {%- assign _icon = _page.icon | default: 'fa-link' -%}
         {%- if _page.icon-style == 'regular' -%}
@@ -51,7 +52,6 @@
         {%- endif -%}
         <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
       {%- endfor -%}
-    {%- endunless -%}
     {%- endunless -%}
   </ul>
 
