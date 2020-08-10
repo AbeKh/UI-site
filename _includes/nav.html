@@ -52,4 +52,15 @@
       {%- endfor -%}
     {%- endunless -%}
   </ul>
+
+<!--Adding a hiding page front matter component-->
+  <ul>
+  {% for p in pages %}
+      {% unless show_in_nav == false %}
+      <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+      {% endunless %}
+  {% endfor %}
+  </ul>
+
 </nav>
+
