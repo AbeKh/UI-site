@@ -10,9 +10,7 @@
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
       {%- for _page in _pages -%}
-        {% unless page.exclude %}
-          {%- assign _title = _page.title | default: _page.layout -%}
-        {%- endunless -%}
+        {%- assign _title = _page.title | default: _page.layout -%}
         {%- assign _slug = _title | slugify -%}
         {%- assign _icon = _page.icon | default: 'fa-link' -%}
         {%- if _page.icon-style == 'regular' -%}
