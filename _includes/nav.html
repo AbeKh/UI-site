@@ -54,13 +54,13 @@
   </ul>
 
 <!--Adding a hiding page front matter component-->
-  <ul>
-  {% for p in pages %}
-      {% unless show_in_nav == false %}
-      <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
-      {% endunless %}
+<ul>
+  {% for page in site.pages %}
+    {% if page.menu == 'main' %}
+      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% endif %}
   {% endfor %}
-  </ul>
+</ul>
 
 </nav>
 
