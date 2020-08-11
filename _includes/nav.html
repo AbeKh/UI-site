@@ -10,7 +10,6 @@
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
       {%- for _page in _pages -%}
-      {% if page.menu == 'main' %}
         {%- assign _title = _page.title | default: _page.layout -%}
         {%- assign _slug = _title | slugify -%}
         {%- assign _icon = _page.icon | default: 'fa-link' -%}
@@ -20,7 +19,6 @@
           {%- assign _class = 'icon-b' -%}
         {%- else -%}
           {%- assign _class = 'icon' -%}
-        {%- endif -%}
         {%- endif -%}
         {%- comment -%}<!-- page.url (no underscore) is the url of the current page-->{%- endcomment -%}
         {%- if _page.url == page.url -%}
@@ -56,13 +54,7 @@
   </ul>
 
 <!--Adding a hiding page front matter component-->
-<ul>
-  {% for page in site.pages %}
-    {% if page.menu == 'main' %}
-      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+
 
 </nav>
 
