@@ -1,10 +1,11 @@
 ---
 title: Interest list
-subtitle: a list of books I read
+subtitle: Random readings and visuals I shared with team members
 layout: "page"
 icon: fa-book
 order: 3
 ---
+<h8>
 
 I love books! Here are some I'm reading now:
 
@@ -19,3 +20,4 @@ I love books! Here are some I'm reading now:
 9. Karl Marx: *Capital*
 10. James Woodforde: *The Diary of A Country Parson*
 
+</h8>
