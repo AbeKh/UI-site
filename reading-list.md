@@ -1,5 +1,5 @@
 ---
-title: Reading List
+title: Interest list
 subtitle: a list of books I read
 layout: "page"
 icon: fa-book
@@ -19,4 +19,3 @@ I love books! Here are some I'm reading now:
 9. Karl Marx: *Capital*
 10. James Woodforde: *The Diary of A Country Parson*
 
-source: [The Guardian](https://www.theguardian.com/books/booksblog/2011/jan/04/best-boring-books)
